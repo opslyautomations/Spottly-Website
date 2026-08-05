@@ -11,6 +11,7 @@
   --color-slate: #64748b;
   --background: #ffffff;
   --foreground: var(--color-ink);
+  color-scheme: light;
 }
 
 @theme inline {
@@ -24,18 +25,6 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a1628;
-    --foreground: #eef2f9;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
 }
 
 @layer utilities {
