@@ -1,0 +1,38 @@
+# Spottly
+> Spottly is a mobile house-cleaning company serving Los Angeles — from the Westside to Koreatown — offering standard, deep, move-in/move-out, recurring, Airbnb turnover, and commercial cleaning, built on a founder's obsession with the small details.
+
+## Contact
+- Phone: (310) 963-2302
+- Email: info@spottly.co
+- Hours: By appointment — contact for availability
+- Website: https://www.spottly.co
+
+## Services
+- Standard Cleaning (/services/standard-cleaning): Routine upkeep that keeps a home consistently fresh.
+- Deep Cleaning (/services/deep-cleaning): Top-to-bottom reset for a lived-in home, including inside appliances and behind furniture.
+- Move-In / Move-Out Cleaning (/services/move-in-move-out-cleaning): Empty-home clean built to protect a security deposit or ready a new place.
+- Recurring Cleaning (/services/recurring-cleaning): Weekly, biweekly, or monthly service at a lower per-visit rate.
+- Airbnb Cleaning (/services/airbnb-cleaning): Short-term rental turnovers with linens, restock, and photo proof.
+- Commercial Cleaning (/services/commercial-cleaning): Office and janitorial cleaning, after-hours or day-porter.
+
+## Service Areas
+- Santa Monica (/service-areas/santa-monica): Beach-air and rent-controlled apartment cleaning.
+- Culver City (/service-areas/culver-city): Studio/tech offices and downtown apartments.
+- Beverly Hills (/service-areas/beverly-hills): Luxury estate recurring and deep cleaning.
+- West Hollywood (/service-areas/west-hollywood): Dense renter-city apartment and turnover cleaning.
+- Marina del Rey (/service-areas/marina-del-rey): Waterfront condo and short-term rental turnovers.
+- Venice (/service-areas/venice): Airbnb turnovers and Silicon Beach offices.
+- Sawtelle (/service-areas/sawtelle): Japantown and UCLA-adjacent apartment cleaning.
+- Brentwood (/service-areas/brentwood): Estate and fire-zone hillside deep cleaning.
+- Westchester (/service-areas/westchester): LAX-area family homes and LMU rentals.
+- Mid-City (/service-areas/mid-city): Mid-City West / Miracle Mile / Park La Brea apartments.
+- Koreatown (/service-areas/koreatown): Dense pre-war apartment and commercial cleaning.
+
+## Company
+- About Us (/about): Spottly's founder story and detail-first standard.
+- Reviews (/reviews): Customer reviews across Spottly's LA service areas.
+- Gallery (/gallery): Before/after photos of Spottly cleans.
+- Contact (/contact): Get a free quote or reach the Spottly team.
+
+## Blog
+- Guides and tips on house cleaning, move-outs, Airbnb turnovers, and neighborhood-specific cleaning across Los Angeles (/blog).

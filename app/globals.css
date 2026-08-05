@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  --color-dark-blue: #0b2545;
+  --color-primary-blue: #1d4ed8;
+  --color-primary-blue-hover: #1e40af;
+  --color-light-blue: #93c5fd;
+  --color-pale-blue: #eff6ff;
+  --color-white: #ffffff;
+  --color-ink: #0f172a;
+  --color-slate: #64748b;
+  --background: #ffffff;
+  --foreground: var(--color-ink);
+}
+
+@theme inline {
+  --color-dark-blue: var(--color-dark-blue);
+  --color-primary-blue: var(--color-primary-blue);
+  --color-primary-blue-hover: var(--color-primary-blue-hover);
+  --color-light-blue: var(--color-light-blue);
+  --color-pale-blue: var(--color-pale-blue);
+  --color-ink: var(--color-ink);
+  --color-slate: var(--color-slate);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a1628;
+    --foreground: #eef2f9;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Prose styling for body copy rendered from HTML strings (service/location/blog content) */
+.prose-spottly {
+  color: var(--color-ink);
+  line-height: 1.75;
+}
+.prose-spottly h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-dark-blue);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+.prose-spottly h3 {
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--color-dark-blue);
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+.prose-spottly p {
+  margin-bottom: 1.1rem;
+}
+.prose-spottly ul,
+.prose-spottly ol {
+  margin-bottom: 1.1rem;
+  padding-left: 1.4rem;
+}
+.prose-spottly ul {
+  list-style-type: disc;
+}
+.prose-spottly ol {
+  list-style-type: decimal;
+}
+.prose-spottly li {
+  margin-bottom: 0.5rem;
+}
+.prose-spottly li > strong:first-child {
+  color: var(--color-dark-blue);
+}
+.prose-spottly a {
+  color: var(--color-primary-blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose-spottly a:hover {
+  color: var(--color-primary-blue-hover);
+}
+.prose-spottly strong {
+  color: var(--color-dark-blue);
+}
