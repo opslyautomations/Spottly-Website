@@ -27,6 +27,14 @@
   --font-sans: var(--font-inter);
 }
 
+@layer base {
+  body {
+    background-color: #eaf2fe;
+    background-image: linear-gradient(180deg, #ffffff 0%, #eaf2fe 22%, #dbe9fd 55%, #cfe2fc 100%);
+    background-attachment: fixed;
+  }
+}
+
 @layer utilities {
   .no-scrollbar::-webkit-scrollbar {
     display: none;
