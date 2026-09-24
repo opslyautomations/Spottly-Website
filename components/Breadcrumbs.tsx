@@ -15,7 +15,7 @@ export default function Breadcrumbs({ items }: { items: Crumb[] }) {
             {i === items.length - 1 ? (
               <span className="font-medium text-[var(--color-dark-blue)]">{item.name}</span>
             ) : (
-              <Link href={item.path} className="hover:text-[var(--color-primary-blue)]">
+              <Link href={item.path} className="hover:text-[var(--color-primary-text)]">
                 {item.name}
               </Link>
             )}

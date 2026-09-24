@@ -74,7 +74,7 @@ export default async function ServicePage({
         <div className="mt-4 flex flex-col gap-4 sm:flex-row">
           <Link
             href="/book"
-            className="inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-6 py-3 font-semibold text-white shadow-md shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-[var(--color-primary-blue-hover)]"
+            className="inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-6 py-3 font-semibold text-white shadow-md shadow-primary-blue/20 transition hover:-translate-y-0.5 hover:bg-[var(--color-primary-blue-hover)]"
           >
             Book {service.navLabel}
           </Link>

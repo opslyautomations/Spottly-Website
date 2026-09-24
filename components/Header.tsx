@@ -33,7 +33,7 @@ function Dropdown({
     >
       <Link
         href={href}
-        className="flex min-h-[48px] items-center gap-1 px-1 font-medium text-[var(--color-dark-blue)] hover:text-[var(--color-primary-blue)]"
+        className="flex min-h-[48px] items-center gap-1 px-1 font-medium text-[var(--color-dark-blue)] hover:text-[var(--color-primary-text)]"
         aria-expanded={open}
       >
         {label}
@@ -47,7 +47,7 @@ function Dropdown({
             <Link
               key={item.href}
               href={item.href}
-              className="block min-h-[48px] rounded-lg px-3 py-3 text-sm text-[var(--color-ink)] hover:bg-[var(--color-pale-blue)] hover:text-[var(--color-primary-blue)]"
+              className="block min-h-[48px] rounded-lg px-3 py-3 text-sm text-[var(--color-ink)] hover:bg-[var(--color-pale-blue)] hover:text-[var(--color-primary-text)]"
             >
               {item.label}
             </Link>
@@ -80,7 +80,7 @@ export default function Header() {
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
-          <Link href="/" className="min-h-[48px] flex items-center font-medium text-[var(--color-dark-blue)] hover:text-[var(--color-primary-blue)]">
+          <Link href="/" className="min-h-[48px] flex items-center font-medium text-[var(--color-dark-blue)] hover:text-[var(--color-primary-text)]">
             Home
           </Link>
           <Dropdown label="Services" href="/services" items={serviceItems} />
@@ -89,7 +89,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="min-h-[48px] flex items-center font-medium text-[var(--color-dark-blue)] hover:text-[var(--color-primary-blue)]"
+              className="min-h-[48px] flex items-center font-medium text-[var(--color-dark-blue)] hover:text-[var(--color-primary-text)]"
             >
               {link.label}
             </Link>
@@ -99,7 +99,7 @@ export default function Header() {
         <div className="hidden items-center gap-4 lg:flex">
           <a
             href={`tel:${SITE.phoneRaw}`}
-            className="flex items-center gap-2 font-semibold text-[var(--color-dark-blue)] hover:text-[var(--color-primary-blue)]"
+            className="flex items-center gap-2 font-semibold text-[var(--color-dark-blue)] hover:text-[var(--color-primary-text)]"
           >
             <PhoneIcon className="h-4 w-4" />
             {SITE.phone}
@@ -112,7 +112,7 @@ export default function Header() {
           </Link>
           <Link
             href="/book"
-            className="inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-5 py-2.5 font-semibold text-white shadow-md shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-[var(--color-primary-blue-hover)]"
+            className="inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-5 py-2.5 font-semibold text-white shadow-md shadow-primary-blue/20 transition hover:-translate-y-0.5 hover:bg-[var(--color-primary-blue-hover)]"
           >
             Book Now
           </Link>
@@ -146,7 +146,7 @@ export default function Header() {
                 Services
               </summary>
               <div className="ml-3 flex flex-col gap-1 border-l border-slate-200 pl-3">
-                <Link href="/services" className="min-h-[44px] flex items-center text-sm font-semibold text-[var(--color-primary-blue)]">
+                <Link href="/services" className="min-h-[44px] flex items-center text-sm font-semibold text-[var(--color-primary-text)]">
                   All Services
                 </Link>
                 {serviceItems.map((item) => (
@@ -161,7 +161,7 @@ export default function Header() {
                 Service Areas
               </summary>
               <div className="ml-3 flex flex-col gap-1 border-l border-slate-200 pl-3">
-                <Link href="/service-areas" className="min-h-[44px] flex items-center text-sm font-semibold text-[var(--color-primary-blue)]">
+                <Link href="/service-areas" className="min-h-[44px] flex items-center text-sm font-semibold text-[var(--color-primary-text)]">
                   All Service Areas
                 </Link>
                 {areaItems.map((item) => (

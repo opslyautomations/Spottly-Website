@@ -33,7 +33,7 @@ export default function ServicesGrid({ excludeSlug }: { excludeSlug?: string }) 
                 <p className="mt-2 flex-1 text-sm text-[var(--color-slate)]">
                   {service.introHtml.replace(/<[^>]+>/g, "").slice(0, 110)}…
                 </p>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--color-primary-blue)]">
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--color-primary-text)]">
                   Learn more <ArrowRightIcon className="h-4 w-4 transition group-hover:translate-x-1" />
                 </span>
               </div>

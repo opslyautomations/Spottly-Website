@@ -89,7 +89,7 @@ export default async function BlogPostPage({
 
       <article>
         <header className="mx-auto max-w-3xl px-6 pt-10 text-center sm:pt-14">
-          <span className="animate-rise inline-block rounded-full bg-[var(--color-pale-blue)] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[var(--color-primary-blue)]">
+          <span className="animate-rise inline-block rounded-full bg-[var(--color-pale-blue)] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[var(--color-primary-text)]">
             {post.category}
           </span>
           <h1 className="animate-rise mt-4 text-3xl font-bold leading-tight tracking-tight text-[var(--color-dark-blue)] sm:text-5xl">
@@ -145,14 +145,14 @@ export default async function BlogPostPage({
             <div className="prose-spottly text-[1.05rem]" dangerouslySetInnerHTML={{ __html: secondHalf }} />
           )}
 
-          <aside className="mt-12 flex flex-col items-start gap-4 rounded-2xl border border-blue-100 bg-white p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between">
+          <aside className="mt-12 flex flex-col items-start gap-4 rounded-2xl border border-light-blue/40 bg-white p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="font-semibold text-[var(--color-dark-blue)]">Skip the scrubbing this week.</p>
               <p className="mt-1 text-sm text-[var(--color-slate)]">Book a Spottly clean online in a few minutes.</p>
             </div>
             <Link
               href="/book"
-              className="inline-flex min-h-[48px] shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-6 py-3 font-semibold text-white shadow-md shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-[var(--color-primary-blue-hover)]"
+              className="inline-flex min-h-[48px] shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-6 py-3 font-semibold text-white shadow-md shadow-primary-blue/20 transition hover:-translate-y-0.5 hover:bg-[var(--color-primary-blue-hover)]"
             >
               Book Your Cleaning
             </Link>
@@ -188,13 +188,13 @@ export default async function BlogPostPage({
                       )}
                     </div>
                     <div className="flex flex-1 flex-col p-5">
-                      <span className="text-xs font-semibold uppercase tracking-wide text-[var(--color-primary-blue)]">
+                      <span className="text-xs font-semibold uppercase tracking-wide text-[var(--color-primary-text)]">
                         {r.category}
                       </span>
-                      <h3 className="mt-2 flex-1 font-semibold leading-snug text-[var(--color-dark-blue)] group-hover:text-[var(--color-primary-blue)]">
+                      <h3 className="mt-2 flex-1 font-semibold leading-snug text-[var(--color-dark-blue)] group-hover:text-[var(--color-primary-text)]">
                         {r.title}
                       </h3>
-                      <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--color-primary-blue)]">
+                      <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--color-primary-text)]">
                         Read article <ArrowRightIcon className="h-4 w-4 transition group-hover:translate-x-1" />
                       </span>
                     </div>

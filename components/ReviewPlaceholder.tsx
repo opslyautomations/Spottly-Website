@@ -5,7 +5,7 @@ export default function ReviewPlaceholder({ text, cityLabel }: { text: string; c
         {"★★★★★"}
       </div>
       <p className="mt-3 text-sm italic text-[var(--color-slate)]">{text}</p>
-      {cityLabel && <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-[var(--color-primary-blue)]">{cityLabel}</p>}
+      {cityLabel && <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-[var(--color-primary-text)]">{cityLabel}</p>}
     </div>
   );
 }

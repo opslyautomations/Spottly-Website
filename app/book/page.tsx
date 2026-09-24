@@ -29,7 +29,7 @@ export default function BookPage() {
             Choose your service, pick a date and time, and you&apos;re set. Prefer to talk it through?{" "}
             <a
               href={`tel:${SITE.phoneRaw}`}
-              className="inline-flex items-center gap-1 font-semibold text-[var(--color-primary-blue)] hover:underline"
+              className="inline-flex items-center gap-1 font-semibold text-[var(--color-primary-text)] hover:underline"
             >
               <PhoneIcon className="h-4 w-4" /> {SITE.phone}
             </a>

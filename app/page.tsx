@@ -54,7 +54,7 @@ const WHY_POINTS = [
 const delay = (ms: number) => ({ "--delay": `${ms}ms` }) as CSSProperties;
 
 const PRIMARY_BTN =
-  "group inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-[var(--color-primary-blue)] px-8 py-3.5 text-lg font-semibold text-white shadow-lg shadow-blue-600/25 transition duration-300 hover:-translate-y-0.5 hover:bg-[var(--color-primary-blue-hover)] hover:shadow-xl hover:shadow-blue-600/30";
+  "group inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-[var(--color-primary-blue)] px-8 py-3.5 text-lg font-semibold text-white shadow-lg shadow-primary-blue/25 transition duration-300 hover:-translate-y-0.5 hover:bg-[var(--color-primary-blue-hover)] hover:shadow-xl hover:shadow-primary-blue/30";
 
 export default function HomePage() {
   return (
@@ -68,7 +68,7 @@ export default function HomePage() {
         <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 pb-16 pt-10 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24 lg:pt-16">
           <div>
             <p
-              className="animate-rise inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-sm font-semibold text-[var(--color-primary-blue)] shadow-sm ring-1 ring-blue-100"
+              className="animate-rise inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-sm font-semibold text-[var(--color-primary-text)] shadow-sm ring-1 ring-light-blue/40"
               style={delay(0)}
             >
               <SparkleIcon className="h-4 w-4" /> {SITE.tagline}
@@ -78,7 +78,7 @@ export default function HomePage() {
               style={delay(80)}
             >
               Los Angeles house cleaning,{" "}
-              <span className="text-[var(--color-primary-blue)]">booked in minutes.</span>
+              <span className="text-[var(--color-primary-text)]">booked in minutes.</span>
             </h1>
             <p
               className="animate-rise mt-6 max-w-xl text-lg text-[var(--color-slate)]"
@@ -117,7 +117,7 @@ export default function HomePage() {
           </div>
 
           <div className="relative mx-auto w-full max-w-xl lg:max-w-none">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl shadow-blue-900/20">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl shadow-dark-blue/20">
               <Image
                 src={IMAGES.heroLivingRoom.src}
                 alt={IMAGES.heroLivingRoom.alt}
@@ -165,7 +165,7 @@ export default function HomePage() {
       {/* How it works */}
       <section className="mx-auto max-w-6xl px-6 py-20">
         <Reveal>
-          <p className="text-center text-sm font-semibold uppercase tracking-widest text-[var(--color-primary-blue)]">
+          <p className="text-center text-sm font-semibold uppercase tracking-widest text-[var(--color-primary-text)]">
             How it works
           </p>
           <h2 className="mt-3 text-center text-3xl font-bold text-[var(--color-dark-blue)] sm:text-4xl">
@@ -225,7 +225,7 @@ export default function HomePage() {
             </div>
           </Reveal>
           <Reveal delay={120}>
-            <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-primary-blue)]">
+            <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-primary-text)]">
               Why Spottly
             </p>
             <h2 className="mt-3 text-3xl font-bold text-[var(--color-dark-blue)] sm:text-4xl">
@@ -252,7 +252,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-1 font-semibold text-[var(--color-primary-blue)] hover:text-[var(--color-primary-blue-hover)]"
+                className="inline-flex items-center gap-1 font-semibold text-[var(--color-primary-text)] hover:text-[var(--color-dark-blue)]"
               >
                 Read our story <ArrowRightIcon className="h-4 w-4" />
               </Link>
@@ -291,7 +291,7 @@ export default function HomePage() {
           ))}
         </div>
         <div className="mt-6 text-center">
-          <Link href="/reviews" className="font-semibold text-[var(--color-primary-blue)] hover:text-[var(--color-primary-blue-hover)]">
+          <Link href="/reviews" className="font-semibold text-[var(--color-primary-text)] hover:text-[var(--color-dark-blue)]">
             Read more reviews →
           </Link>
         </div>

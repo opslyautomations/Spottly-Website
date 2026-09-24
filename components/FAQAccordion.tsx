@@ -26,7 +26,7 @@ export default function FAQAccordion({ faqs }: { faqs: FAQItem[] }) {
             >
               <span className="font-semibold text-[var(--color-dark-blue)]">{faq.question}</span>
               <span
-                className={`shrink-0 text-xl text-[var(--color-primary-blue)] transition-transform ${
+                className={`shrink-0 text-xl text-[var(--color-primary-text)] transition-transform ${
                   isOpen ? "rotate-45" : ""
                 }`}
                 aria-hidden="true"

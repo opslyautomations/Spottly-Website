@@ -26,7 +26,7 @@ export default function StickyBookBar() {
           </a>
           <Link
             href="/book"
-            className="flex h-12 flex-1 items-center justify-center rounded-lg bg-[var(--color-primary-blue)] font-semibold text-white shadow-lg shadow-blue-600/25 transition active:scale-[0.98]"
+            className="flex h-12 flex-1 items-center justify-center rounded-lg bg-[var(--color-primary-blue)] font-semibold text-white shadow-lg shadow-primary-blue/25 transition active:scale-[0.98]"
           >
             Book Your Cleaning
           </Link>

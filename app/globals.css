@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --color-dark-blue: #0b2545;
-  --color-primary-blue: #1d4ed8;
-  --color-primary-blue-hover: #1e40af;
-  --color-light-blue: #93c5fd;
-  --color-pale-blue: #eff6ff;
+  /* Brand palette */
+  --color-primary-blue: #087bff; /* buttons, accents, icons */
+  --color-primary-blue-hover: #005fcc;
+  --color-primary-text: #005fcc; /* blue text & links — #087bff is too light for small text on white */
+  --color-dark-blue: #172033; /* headings, dark sections */
+  --color-slate: #4b5563; /* secondary text */
+  --color-light-blue: #7dbaff;
+  --color-pale-blue: #eaf4ff;
   --color-white: #ffffff;
-  --color-ink: #0f172a;
-  --color-slate: #64748b;
+  --color-ink: #172033;
   --background: #ffffff;
   --foreground: var(--color-ink);
   color-scheme: light;
@@ -18,6 +20,7 @@
   --color-dark-blue: var(--color-dark-blue);
   --color-primary-blue: var(--color-primary-blue);
   --color-primary-blue-hover: var(--color-primary-blue-hover);
+  --color-primary-text: var(--color-primary-text);
   --color-light-blue: var(--color-light-blue);
   --color-pale-blue: var(--color-pale-blue);
   --color-ink: var(--color-ink);
@@ -29,8 +32,8 @@
 
 @layer base {
   body {
-    background-color: #eaf2fe;
-    background-image: linear-gradient(180deg, #ffffff 0%, #eaf2fe 22%, #dbe9fd 55%, #cfe2fc 100%);
+    background-color: #eaf4ff;
+    background-image: linear-gradient(180deg, #ffffff 0%, #eaf4ff 22%, #dcecff 55%, #cfe5ff 100%);
     background-attachment: fixed;
   }
 }
@@ -103,10 +106,10 @@
 }
 @keyframes pulse-ring {
   0% {
-    box-shadow: 0 0 0 0 rgb(29 78 216 / 0.45);
+    box-shadow: 0 0 0 0 rgb(8 123 255 / 0.45);
   }
   100% {
-    box-shadow: 0 0 0 14px rgb(29 78 216 / 0);
+    box-shadow: 0 0 0 14px rgb(8 123 255 / 0);
   }
 }
 
@@ -151,7 +154,7 @@
   color: var(--color-dark-blue);
 }
 .prose-spottly a {
-  color: var(--color-primary-blue);
+  color: var(--color-primary-text);
   text-decoration: underline;
   text-underline-offset: 2px;
 }

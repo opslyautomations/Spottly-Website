@@ -32,10 +32,10 @@ export default function ContactPage() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4">
-            <a href={`tel:${SITE.phoneRaw}`} className="flex items-center gap-3 font-semibold text-[var(--color-dark-blue)] hover:text-[var(--color-primary-blue)]">
+            <a href={`tel:${SITE.phoneRaw}`} className="flex items-center gap-3 font-semibold text-[var(--color-dark-blue)] hover:text-[var(--color-primary-text)]">
               <PhoneIcon className="h-5 w-5 text-[var(--color-primary-blue)]" /> {SITE.phone}
             </a>
-            <a href={`mailto:${SITE.email}`} className="flex items-center gap-3 font-semibold text-[var(--color-dark-blue)] hover:text-[var(--color-primary-blue)]">
+            <a href={`mailto:${SITE.email}`} className="flex items-center gap-3 font-semibold text-[var(--color-dark-blue)] hover:text-[var(--color-primary-text)]">
               <MailIcon className="h-5 w-5 text-[var(--color-primary-blue)]" /> {SITE.email}
             </a>
             <p className="text-sm text-[var(--color-slate)]">{SITE.hours}</p>

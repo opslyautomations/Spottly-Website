@@ -45,7 +45,7 @@ export default function BlogIndexPage() {
       <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }]} />
 
       <section className="mx-auto max-w-4xl px-6 py-10 text-center sm:py-14">
-        <p className="animate-rise text-sm font-semibold uppercase tracking-widest text-[var(--color-primary-blue)]">
+        <p className="animate-rise text-sm font-semibold uppercase tracking-widest text-[var(--color-primary-text)]">
           The Spottly Blog
         </p>
         <h1 className="animate-rise mt-3 text-4xl font-bold tracking-tight text-[var(--color-dark-blue)] sm:text-5xl">
@@ -78,14 +78,14 @@ export default function BlogIndexPage() {
             )}
           </div>
           <div className="flex flex-col justify-center p-7 sm:p-10">
-            <span className="w-fit rounded-full bg-[var(--color-pale-blue)] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[var(--color-primary-blue)]">
+            <span className="w-fit rounded-full bg-[var(--color-pale-blue)] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[var(--color-primary-text)]">
               Latest · {featured.category}
             </span>
             <h2 className="mt-4 text-2xl font-bold text-[var(--color-dark-blue)] sm:text-3xl">{featured.title}</h2>
             <p className="mt-3 text-[var(--color-slate)]">{featured.excerpt}</p>
             <div className="mt-6 flex items-center justify-between gap-4">
               <PostMeta post={featured} />
-              <span className="inline-flex items-center gap-1 text-sm font-semibold text-[var(--color-primary-blue)]">
+              <span className="inline-flex items-center gap-1 text-sm font-semibold text-[var(--color-primary-text)]">
                 Read article <ArrowRightIcon className="h-4 w-4 transition group-hover:translate-x-1" />
               </span>
             </div>
@@ -116,12 +116,12 @@ export default function BlogIndexPage() {
                     ) : (
                       <ImagePlaceholder alt={post.title} seed={i} className="h-full w-full" />
                     )}
-                    <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-[var(--color-primary-blue)] shadow-sm backdrop-blur">
+                    <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-[var(--color-primary-text)] shadow-sm backdrop-blur">
                       {post.category}
                     </span>
                   </div>
                   <div className="flex flex-1 flex-col p-6">
-                    <h2 className="text-lg font-semibold leading-snug text-[var(--color-dark-blue)] group-hover:text-[var(--color-primary-blue)]">
+                    <h2 className="text-lg font-semibold leading-snug text-[var(--color-dark-blue)] group-hover:text-[var(--color-primary-text)]">
                       {post.title}
                     </h2>
                     <p className="mt-2 flex-1 text-sm text-[var(--color-slate)]">{post.excerpt}</p>

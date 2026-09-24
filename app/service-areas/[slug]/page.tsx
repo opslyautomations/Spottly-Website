@@ -75,7 +75,7 @@ export default async function LocationPage({
 
       {/* Neighborhood photo banner */}
       <section className="mx-auto max-w-7xl px-4 pt-2 sm:px-6">
-        <figure className="relative isolate overflow-hidden rounded-3xl bg-[var(--color-dark-blue)] shadow-2xl shadow-blue-900/20">
+        <figure className="relative isolate overflow-hidden rounded-3xl bg-[var(--color-dark-blue)] shadow-2xl shadow-dark-blue/20">
           {image && (
             <Image
               src={image.src}
@@ -88,7 +88,7 @@ export default async function LocationPage({
           )}
           <div
             aria-hidden="true"
-            className="absolute inset-0 -z-10 bg-gradient-to-t from-[#0b2545]/95 via-[#0b2545]/60 to-[#0b2545]/20 sm:bg-gradient-to-r sm:from-[#0b2545]/90 sm:via-[#0b2545]/55 sm:to-transparent"
+            className="absolute inset-0 -z-10 bg-gradient-to-t from-[#172033]/95 via-[#172033]/60 to-[#172033]/20 sm:bg-gradient-to-r sm:from-[#172033]/90 sm:via-[#172033]/55 sm:to-transparent"
           />
           <div className="flex min-h-[460px] flex-col justify-end px-6 pb-10 pt-32 sm:min-h-[520px] sm:justify-center sm:px-12 sm:py-16">
             <p className="animate-rise inline-flex w-fit items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-sm font-semibold text-white ring-1 ring-white/25 backdrop-blur">
@@ -147,7 +147,7 @@ export default async function LocationPage({
                 <Link
                   key={area!.slug}
                   href={`/service-areas/${area!.slug}`}
-                  className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-[var(--color-primary-blue)] transition hover:-translate-y-0.5 hover:bg-[var(--color-pale-blue)]"
+                  className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-[var(--color-primary-text)] transition hover:-translate-y-0.5 hover:bg-[var(--color-pale-blue)]"
                 >
                   <PinIcon className="h-3.5 w-3.5" /> {area!.navLabel}
                 </Link>
@@ -158,8 +158,8 @@ export default async function LocationPage({
 
         {/* Booking card (replaces the old quote form) */}
         <aside className="lg:sticky lg:top-28 lg:self-start">
-          <div className="rounded-3xl border border-blue-100 bg-white p-7 shadow-xl shadow-blue-900/5">
-            <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-primary-blue)]">
+          <div className="rounded-3xl border border-light-blue/40 bg-white p-7 shadow-xl shadow-dark-blue/5">
+            <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-primary-text)]">
               Book online
             </p>
             <h2 className="mt-2 text-2xl font-bold text-[var(--color-dark-blue)]">
@@ -168,7 +168,7 @@ export default async function LocationPage({
             <ol className="mt-6 space-y-3">
               {BOOKING_STEPS.map((step, i) => (
                 <li key={step} className="flex items-center gap-3 text-[var(--color-ink)]">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-pale-blue)] text-sm font-bold text-[var(--color-primary-blue)]">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-pale-blue)] text-sm font-bold text-[var(--color-primary-text)]">
                     {i + 1}
                   </span>
                   {step}
@@ -177,7 +177,7 @@ export default async function LocationPage({
             </ol>
             <Link
               href="/book"
-              className="animate-pulse-ring mt-7 flex min-h-[52px] w-full items-center justify-center gap-2 rounded-xl bg-[var(--color-primary-blue)] px-6 py-3.5 text-lg font-semibold text-white shadow-lg shadow-blue-600/25 transition hover:-translate-y-0.5 hover:bg-[var(--color-primary-blue-hover)]"
+              className="animate-pulse-ring mt-7 flex min-h-[52px] w-full items-center justify-center gap-2 rounded-xl bg-[var(--color-primary-blue)] px-6 py-3.5 text-lg font-semibold text-white shadow-lg shadow-primary-blue/25 transition hover:-translate-y-0.5 hover:bg-[var(--color-primary-blue-hover)]"
             >
               Book Your Cleaning <ArrowRightIcon className="h-5 w-5" />
             </Link>
@@ -191,11 +191,11 @@ export default async function LocationPage({
             </ul>
             <p className="mt-5 text-sm text-[var(--color-slate)]">
               Need a custom scope?{" "}
-              <Link href="/contact" className="font-semibold text-[var(--color-primary-blue)] hover:underline">
+              <Link href="/contact" className="font-semibold text-[var(--color-primary-text)] hover:underline">
                 Get a free quote
               </Link>{" "}
               or call{" "}
-              <a href={`tel:${SITE.phoneRaw}`} className="font-semibold text-[var(--color-primary-blue)] hover:underline">
+              <a href={`tel:${SITE.phoneRaw}`} className="font-semibold text-[var(--color-primary-text)] hover:underline">
                 {SITE.phone}
               </a>
               .
@@ -238,7 +238,7 @@ export default async function LocationPage({
                       <span className="mt-1 flex-1 text-sm text-[var(--color-slate)]">
                         {item.blurb.charAt(0).toUpperCase() + item.blurb.slice(1)}
                       </span>
-                      <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--color-primary-blue)]">
+                      <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[var(--color-primary-text)]">
                         Learn more <ArrowRightIcon className="h-4 w-4 transition group-hover:translate-x-1" />
                       </span>
                     </div>
@@ -282,7 +282,7 @@ export default async function LocationPage({
                 href={resource.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[var(--color-primary-blue)] underline"
+                className="text-[var(--color-primary-text)] underline"
               >
                 {resource.label}
               </a>

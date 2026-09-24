@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <section className="mx-auto flex max-w-2xl flex-col items-center px-6 py-24 text-center">
-      <p className="text-sm font-semibold uppercase tracking-wide text-[var(--color-primary-blue)]">404</p>
+      <p className="text-sm font-semibold uppercase tracking-wide text-[var(--color-primary-text)]">404</p>
       <h1 className="mt-3 text-3xl font-bold text-[var(--color-dark-blue)] sm:text-4xl">
         We couldn&apos;t find that page.
       </h1>
@@ -38,7 +38,7 @@ export default function NotFound() {
           <Link
             key={s.slug}
             href={`/services/${s.slug}`}
-            className="rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-[var(--color-primary-blue)] hover:bg-[var(--color-pale-blue)]"
+            className="rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-[var(--color-primary-text)] hover:bg-[var(--color-pale-blue)]"
           >
             {s.navLabel}
           </Link>
