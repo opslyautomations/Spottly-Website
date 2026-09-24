@@ -1,4 +1,5 @@
-// Illustrative stock photography (Unsplash License — free for commercial use).
+// IMAGES, SERVICE_IMAGES and BLOG_IMAGES: illustrative stock photography (Unsplash License —
+// free for commercial use).
 // Use these only for decorative/illustrative spots. Gallery and "our work" slots
 // must use real, unedited Spottly job photos — never present these as our own jobs.
 export interface SiteImage {
@@ -321,5 +322,127 @@ export const BLOG_IMAGES: Record<string, { hero: SiteImage; inline: SiteImage }>
       width: 1099,
       height: 733,
     },
+  },
+};
+
+export interface CreditedImage extends SiteImage {
+  credit: string;
+  license: string;
+  licenseUrl: string;
+  sourceUrl: string;
+}
+
+// Real photos of each neighborhood from Wikimedia Commons. Most licenses (CC BY / BY-SA)
+// require visible attribution — keep the credit caption wherever these are shown.
+export const LOCATION_IMAGES: Record<string, CreditedImage> = {
+  "santa-monica": {
+    src: "/images/area-santa-monica.jpg",
+    alt: "Santa Monica Pier and Pacific Park at sunset",
+    width: 1600,
+    height: 900,
+    credit: "CucombreLibre from New York, NY, USA",
+    license: "CC BY 2.0",
+    licenseUrl: "https://creativecommons.org/licenses/by/2.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Santa_Monica_Pier_(22944807230).jpg",
+  },
+  "culver-city": {
+    src: "/images/area-culver-city.jpg",
+    alt: "The historic Culver Hotel in downtown Culver City at night",
+    width: 1600,
+    height: 900,
+    credit: "Seiichi Niitsuma / Culver Hotel",
+    license: "CC BY-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Culver_by_Night_-_Seiichi_Niitsuma.jpg",
+  },
+  "beverly-hills": {
+    src: "/images/area-beverly-hills.jpg",
+    alt: "Storefronts along Rodeo Drive in Beverly Hills",
+    width: 1600,
+    height: 900,
+    credit: "DXR",
+    license: "CC BY-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Buildings_at_North_Rodeo_Drive,_Beverly_Hills,_West_view_20110806_1.jpg",
+  },
+  "west-hollywood": {
+    src: "/images/area-west-hollywood.jpg",
+    alt: "The blue Pacific Design Center in West Hollywood",
+    width: 1600,
+    height: 900,
+    credit: "Benoît Prieur",
+    license: "CC0",
+    licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Pacific_Design_Center-(West_Hollywood)_July_2023.jpg",
+  },
+  "marina-del-rey": {
+    src: "/images/area-marina-del-rey.jpg",
+    alt: "Boats docked in the Marina del Rey harbor",
+    width: 1600,
+    height: 900,
+    credit: "P. Hughes",
+    license: "CC BY-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Marina_del_Rey.jpg",
+  },
+  "venice": {
+    src: "/images/area-venice.jpg",
+    alt: "Footbridge over the Venice Canals",
+    width: 1600,
+    height: 900,
+    credit: "Américo Toledano",
+    license: "CC BY-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Los_Angeles_-_Venice_Canal_Historic_District_05.jpg",
+  },
+  "sawtelle": {
+    src: "/images/area-sawtelle.jpg",
+    alt: "Tree-lined residential street in Sawtelle, West LA",
+    width: 1600,
+    height: 900,
+    credit: "peter boy12qq12",
+    license: "CC BY 3.0",
+    licenseUrl: "https://creativecommons.org/licenses/by/3.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Sawtelle,_Los_Angeles,_CA,_USA_-_panoramio_-_peter_boy12qq12_(31).jpg",
+  },
+  "brentwood": {
+    src: "/images/area-brentwood.jpg",
+    alt: "Brentwood neighborhood sign on San Vicente Boulevard",
+    width: 1600,
+    height: 900,
+    credit: "Jengod",
+    license: "CC0",
+    licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Brentwood_sign_on_San_Vicente.jpg",
+  },
+  "westchester": {
+    src: "/images/area-westchester.jpg",
+    alt: "View over Westchester toward the Los Angeles skyline",
+    width: 1600,
+    height: 900,
+    credit: "Bill Abbott",
+    license: "CC BY-SA 2.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:0746_Westchester_parking_lots_1_block_East_from_Sepulveda_Boulevard_DSC_0746_(2)_(49103669418).jpg",
+  },
+  "mid-city": {
+    src: "/images/area-mid-city.jpg",
+    alt: "The Saban Building, the former May Company, on the Miracle Mile",
+    width: 1600,
+    height: 900,
+    credit: "Downtowngal",
+    license: "CC BY-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:The_May_Company_Building_2021.jpg",
+  },
+  "koreatown": {
+    src: "/images/area-koreatown.jpg",
+    alt: "Wilshire Boulevard in Koreatown",
+    width: 1541,
+    height: 867,
+    credit: "Downtowngal",
+    license: "CC BY-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Wilshire_Blvd_in_Koreatown.jpg",
   },
 };
