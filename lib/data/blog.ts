@@ -906,3 +906,18 @@ export const BLOG_POSTS: BlogPost[] = [
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
 }
+
+export function readingMinutes(post: BlogPost): number {
+  const words = post.contentHtml.replace(/<[^>]+>/g, " ").trim().split(/\s+/).length;
+  return Math.max(1, Math.round(words / 230));
+}
+
+/** Posts in the same category first, then the most recent others. */
+export function getRelatedPosts(post: BlogPost, count = 3): BlogPost[] {
+  const others = BLOG_POSTS.filter((p) => p.slug !== post.slug).sort(
+    (a, b) => new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime()
+  );
+  const sameCategory = others.filter((p) => p.category === post.category);
+  const rest = others.filter((p) => p.category !== post.category);
+  return [...sameCategory, ...rest].slice(0, count);
+}
