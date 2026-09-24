@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SERVICES, getServiceBySlug } from "@/lib/data/services";
 import { buildMetadata } from "@/lib/metadata";
+import { SERVICE_IMAGES } from "@/lib/images";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/schema";
 import JsonLd from "@/components/JsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -38,6 +41,7 @@ export default async function ServicePage({
   if (!service) notFound();
 
   const path = `/services/${service.slug}`;
+  const image = SERVICE_IMAGES[service.slug];
 
   return (
     <>
@@ -68,13 +72,32 @@ export default async function ServicePage({
         />
 
         <div className="mt-4 flex flex-col gap-4 sm:flex-row">
-          <a
+          <Link
+            href="/book"
+            className="inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-6 py-3 font-semibold text-white shadow-md shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-[var(--color-primary-blue-hover)]"
+          >
+            Book {service.navLabel}
+          </Link>
+          <Link
             href="/contact"
-            className="inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-6 py-3 font-semibold text-white transition hover:bg-[var(--color-primary-blue-hover)]"
+            className="inline-flex min-h-[48px] items-center justify-center rounded-lg border border-slate-300 px-6 py-3 font-semibold text-[var(--color-dark-blue)] transition hover:bg-[var(--color-pale-blue)]"
           >
             Get a Free Quote
-          </a>
+          </Link>
         </div>
+
+        {image && (
+          <div className="relative mt-10 aspect-[16/9] overflow-hidden rounded-2xl shadow-lg">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              preload
+              sizes="(min-width: 896px) 848px, 100vw"
+              className="animate-slow-zoom object-cover"
+            />
+          </div>
+        )}
 
         <div className="prose-spottly mt-10" dangerouslySetInnerHTML={{ __html: service.bodyHtml }} />
       </section>

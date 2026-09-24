@@ -134,7 +134,7 @@ export default async function LocationPage({
       </section>
 
       <section className="mx-auto max-w-4xl px-6 pb-14">
-        <CTASection heading={`Get a Free Quote in ${location.navLabel}`} />
+        <CTASection heading={`Get a Free Quote in ${location.navLabel}`} ctaLabel="Get a Free Quote" ctaHref="/contact" />
       </section>
 
       <section className="mx-auto max-w-4xl px-6 pb-14">

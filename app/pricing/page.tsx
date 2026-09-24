@@ -85,6 +85,8 @@ export default function PricingPage() {
         <CTASection
           heading="Get a custom quote for your home."
           bodyHtml="<p>Tell us your home's size, condition, and the service you're after — we'll take it from there.</p>"
+          ctaLabel="Get a Free Quote"
+          ctaHref="/contact"
         />
       </section>
     </>

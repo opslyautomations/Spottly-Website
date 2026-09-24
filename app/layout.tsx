@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import StickyBookBar from "@/components/StickyBookBar";
 import JsonLd from "@/components/JsonLd";
 import { SITE } from "@/lib/site";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
@@ -38,6 +39,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <StickyBookBar />
+        <noscript>
+          <style>{"[data-reveal]{opacity:1!important;transform:none!important}"}</style>
+        </noscript>
         <Script src="https://api.opslyautomations.com/js/form_embed.js" strategy="lazyOnload" />
       </body>
     </html>

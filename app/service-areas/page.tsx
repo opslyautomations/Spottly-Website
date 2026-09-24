@@ -40,7 +40,7 @@ export default function ServiceAreasIndexPage() {
       </section>
 
       <section className="mx-auto max-w-4xl px-6 pb-20">
-        <CTASection heading="Don't see your neighborhood listed?" bodyHtml="<p>We may still serve your area — reach out and we'll let you know.</p>" />
+        <CTASection heading="Don't see your neighborhood listed?" bodyHtml="<p>We may still serve your area — reach out and we'll let you know.</p>" ctaLabel="Get a Free Quote" ctaHref="/contact" />
       </section>
     </>
   );

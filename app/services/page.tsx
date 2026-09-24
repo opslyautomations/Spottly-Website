@@ -40,7 +40,7 @@ export default function ServicesIndexPage() {
       </section>
 
       <section className="mx-auto max-w-4xl px-6 pb-20">
-        <CTASection heading="Not sure which service fits your home?" />
+        <CTASection heading="Not sure which service fits your home?" ctaLabel="Get a Free Quote" ctaHref="/contact" />
       </section>
     </>
   );

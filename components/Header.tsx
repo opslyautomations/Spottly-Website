@@ -105,16 +105,16 @@ export default function Header() {
             {SITE.phone}
           </a>
           <Link
-            href="/book"
-            className="inline-flex min-h-[48px] items-center justify-center rounded-lg border-2 border-[var(--color-primary-blue)] px-5 py-2 font-semibold text-[var(--color-primary-blue)] transition hover:bg-[var(--color-pale-blue)]"
+            href="/contact"
+            className="inline-flex min-h-[48px] items-center justify-center rounded-lg border border-slate-300 px-5 py-2 font-semibold text-[var(--color-dark-blue)] transition hover:bg-[var(--color-pale-blue)]"
           >
-            Book Now
+            Get a Quote
           </Link>
           <Link
-            href="/contact"
-            className="inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-5 py-2.5 font-semibold text-white transition hover:bg-[var(--color-primary-blue-hover)]"
+            href="/book"
+            className="inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-5 py-2.5 font-semibold text-white shadow-md shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-[var(--color-primary-blue-hover)]"
           >
-            Get a Free Quote
+            Book Now
           </Link>
         </div>
 
@@ -182,13 +182,13 @@ export default function Header() {
             </a>
             <Link
               href="/book"
-              className="mt-2 inline-flex min-h-[48px] items-center justify-center rounded-lg border-2 border-[var(--color-primary-blue)] px-5 py-3 text-center font-semibold text-[var(--color-primary-blue)]"
+              className="mt-2 inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-5 py-3 text-center font-semibold text-white"
             >
               Book Now
             </Link>
             <Link
               href="/contact"
-              className="mt-2 inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-5 py-3 text-center font-semibold text-white"
+              className="mt-2 inline-flex min-h-[48px] items-center justify-center rounded-lg border border-slate-300 px-5 py-3 text-center font-semibold text-[var(--color-dark-blue)]"
             >
               Get a Free Quote
             </Link>
