@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { SERVICES } from "@/lib/data/services";
@@ -66,8 +67,16 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3">
-        <Link href="/" className="text-xl font-bold text-[var(--color-dark-blue)]">
-          Spottly
+        <Link href="/" className="flex shrink-0 items-center" aria-label={`${SITE.name} home`}>
+          <Image
+            src="/logo.png"
+            alt={SITE.name}
+            width={822}
+            height={385}
+            className="h-11 w-auto"
+            loading="eager"
+            fetchPriority="high"
+          />
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
