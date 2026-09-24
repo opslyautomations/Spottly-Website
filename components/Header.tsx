@@ -96,6 +96,12 @@ export default function Header() {
             {SITE.phone}
           </a>
           <Link
+            href="/book"
+            className="inline-flex min-h-[48px] items-center justify-center rounded-lg border-2 border-[var(--color-primary-blue)] px-5 py-2 font-semibold text-[var(--color-primary-blue)] transition hover:bg-[var(--color-pale-blue)]"
+          >
+            Book Now
+          </Link>
+          <Link
             href="/contact"
             className="inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-5 py-2.5 font-semibold text-white transition hover:bg-[var(--color-primary-blue-hover)]"
           >
@@ -165,6 +171,12 @@ export default function Header() {
               <PhoneIcon className="h-4 w-4" />
               {SITE.phone}
             </a>
+            <Link
+              href="/book"
+              className="mt-2 inline-flex min-h-[48px] items-center justify-center rounded-lg border-2 border-[var(--color-primary-blue)] px-5 py-3 text-center font-semibold text-[var(--color-primary-blue)]"
+            >
+              Book Now
+            </Link>
             <Link
               href="/contact"
               className="mt-2 inline-flex min-h-[48px] items-center justify-center rounded-lg bg-[var(--color-primary-blue)] px-5 py-3 text-center font-semibold text-white"

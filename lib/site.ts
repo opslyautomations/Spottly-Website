@@ -22,6 +22,7 @@ export const COMPANY_LINKS: NavLink[] = [
   { label: "Reviews", href: "/reviews" },
   { label: "Gallery", href: "/gallery" },
   { label: "Blog", href: "/blog" },
+  { label: "Book Online", href: "/book" },
   { label: "Contact", href: "/contact" },
 ];
 
